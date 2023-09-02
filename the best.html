@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WhatsApp Button</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #25d366; /* WhatsApp green */
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #25d366; /* WhatsApp green */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #128C7E; /* Darker green on hover */
+        }
+
+        .whatsapp-icon {
+            font-size: 24px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us on WhatsApp</h1>
+    </header>
+    <div class="container">
+        <p>Welcome to our website. If you have any questions or need assistance, feel free to reach out to us on WhatsApp.</p>
+        <button id="whatsappButton">
+            <span class="whatsapp-icon">&#x1F4AC;</span>Open WhatsApp
+        </button>
+    </div>
+    <div>
+        <a href="https://instagram.com/intensebond?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61550798780378&mibextid=LQQJ4d" target="_blank">Facebook</a>
+        <a href="https://www.tiktok.com/@intensebond?_t=8fM8y8d4ItT&_r=1" target="_blank">TikTok</a>
+    </div>
+</div>
+    <script>
+        document.getElementById("whatsappButton").addEventListener("click", function () {
+            // Replace '1234567890' with the actual WhatsApp number you want to chat with.
+            var phoneNumber = "+971556953400";
+
+            // Replace 'Hello, how can I help you?' with the desired message.
+            var message = "Hi, I'd like to inquire about the woman Watch and Bracelet set.";
+
+            // Create the WhatsApp link.
+            var whatsappLink = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+
+            // Open WhatsApp in a new tab/window.
+            window.open(whatsappLink);
+        });
+    </script>
+</body>
+</html>
